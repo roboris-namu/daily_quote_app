@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/language.dart';
+import '../services/translation_service.dart';
 
 /// 언어 선택 위젯
 class LanguageSelector extends StatelessWidget {
@@ -41,7 +42,7 @@ class LanguageSelector extends StatelessWidget {
                 style: const TextStyle(fontWeight: FontWeight.bold),
               ),
               const SizedBox(width: 8),
-              Text(language.name),
+              Text(TranslationService.getLanguageName(language.code)),
             ],
           ),
         );

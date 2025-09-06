@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/quote.dart';
 import '../models/language.dart';
+import '../services/translation_service.dart';
 
 /// 명언을 표시하는 카드 위젯
 class QuoteCard extends StatelessWidget {
@@ -83,7 +84,9 @@ class QuoteCard extends StatelessWidget {
                 // 즐겨찾기 버튼
                 _buildActionButton(
                   icon: isFavorite ? Icons.favorite : Icons.favorite_border,
-                  label: isFavorite ? '즐겨찾기 해제' : '즐겨찾기',
+                  label: isFavorite 
+                    ? TranslationService.translate('remove_from_favorites')
+                    : TranslationService.translate('add_to_favorites'),
                   color: isFavorite ? Colors.red : Colors.grey[600]!,
                   onPressed: onFavoriteToggle,
                 ),
@@ -91,7 +94,7 @@ class QuoteCard extends StatelessWidget {
                 // 공유 버튼
                 _buildActionButton(
                   icon: Icons.share,
-                  label: '공유',
+                  label: TranslationService.translate('share'),
                   color: Colors.deepPurple,
                   onPressed: onShare,
                 ),

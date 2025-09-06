@@ -1,0 +1,19 @@
+{
+  "app_title": "दैनिक उद्धरण",
+  "refresh": "ताज़ा करें",
+  "add_to_favorites": "पसंदीदा में जोड़ें",
+  "remove_from_favorites": "पसंदीदा से हटाएं",
+  "share": "साझा करें",
+  "favorites": "पसंदीदा",
+  "home": "होम",
+  "language": "भाषा",
+  "quote_of_the_day": "दिन का उद्धरण",
+  "no_favorites": "अभी तक कोई पसंदीदा उद्धरण नहीं",
+  "added_to_favorites": "पसंदीदा में जोड़ा गया",
+  "removed_from_favorites": "पसंदीदा से हटाया गया",
+  "share_quote": "उद्धरण साझा करें",
+  "share_as_text": "टेक्स्ट के रूप में साझा करें",
+  "share_as_image": "छवि के रूप में साझा करें",
+  "cancel": "रद्द करें",
+  "ok": "ठीक है"
+}

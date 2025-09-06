@@ -1,0 +1,19 @@
+{
+  "app_title": "日々の名言",
+  "refresh": "更新",
+  "add_to_favorites": "お気に入りに追加",
+  "remove_from_favorites": "お気に入りから削除",
+  "share": "共有",
+  "favorites": "お気に入り",
+  "home": "ホーム",
+  "language": "言語",
+  "quote_of_the_day": "今日の名言",
+  "no_favorites": "お気に入りの名言がありません",
+  "added_to_favorites": "お気に入りに追加されました",
+  "removed_from_favorites": "お気に入りから削除されました",
+  "share_quote": "名言を共有",
+  "share_as_text": "テキストで共有",
+  "share_as_image": "画像で共有",
+  "cancel": "キャンセル",
+  "ok": "OK"
+}

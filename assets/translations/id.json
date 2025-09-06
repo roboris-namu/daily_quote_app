@@ -1,0 +1,19 @@
+{
+  "app_title": "Kutipan Harian",
+  "refresh": "Segarkan",
+  "add_to_favorites": "Tambah ke Favorit",
+  "remove_from_favorites": "Hapus dari Favorit",
+  "share": "Bagikan",
+  "favorites": "Favorit",
+  "home": "Beranda",
+  "language": "Bahasa",
+  "quote_of_the_day": "Kutipan Hari Ini",
+  "no_favorites": "Belum ada kutipan favorit",
+  "added_to_favorites": "Ditambahkan ke favorit",
+  "removed_from_favorites": "Dihapus dari favorit",
+  "share_quote": "Bagikan Kutipan",
+  "share_as_text": "Bagikan sebagai Teks",
+  "share_as_image": "Bagikan sebagai Gambar",
+  "cancel": "Batal",
+  "ok": "OK"
+}

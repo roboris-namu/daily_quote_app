@@ -1,0 +1,19 @@
+{
+  "app_title": "Citas Diarias",
+  "refresh": "Actualizar",
+  "add_to_favorites": "Agregar a Favoritos",
+  "remove_from_favorites": "Quitar de Favoritos",
+  "share": "Compartir",
+  "favorites": "Favoritos",
+  "home": "Inicio",
+  "language": "Idioma",
+  "quote_of_the_day": "Cita del Día",
+  "no_favorites": "No hay citas favoritas aún",
+  "added_to_favorites": "Agregado a favoritos",
+  "removed_from_favorites": "Quitado de favoritos",
+  "share_quote": "Compartir Cita",
+  "share_as_text": "Compartir como Texto",
+  "share_as_image": "Compartir como Imagen",
+  "cancel": "Cancelar",
+  "ok": "OK"
+}

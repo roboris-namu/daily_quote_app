@@ -4,6 +4,7 @@ import '../models/quote.dart';
 import '../models/language.dart';
 import '../services/favorites_service.dart';
 import '../services/share_service.dart';
+import '../services/translation_service.dart';
 import '../widgets/quote_card.dart';
 import '../widgets/language_selector.dart';
 
@@ -51,6 +52,8 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
     setState(() {
       _currentLanguage = language;
     });
+    // 번역 서비스에 언어 변경 알림
+    TranslationService.setLanguage(language.code);
   }
 
   /// 즐겨찾기에서 명언을 제거하는 메서드
@@ -67,9 +70,9 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
       // 스낵바 표시
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('즐겨찾기에서 제거되었습니다'),
-            duration: Duration(seconds: 2),
+          SnackBar(
+            content: Text(TranslationService.translate('removed_from_favorites')),
+            duration: const Duration(seconds: 2),
           ),
         );
       }
@@ -86,16 +89,16 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('모든 즐겨찾기 제거'),
-        content: const Text('모든 즐겨찾기를 제거하시겠습니까?'),
+        title: Text(TranslationService.translate('remove_from_favorites')),
+        content: Text(TranslationService.translate('remove_from_favorites')),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(false),
-            child: const Text('취소'),
+            child: Text(TranslationService.translate('cancel')),
           ),
           TextButton(
             onPressed: () => Navigator.of(context).pop(true),
-            child: const Text('제거'),
+            child: Text(TranslationService.translate('remove_from_favorites')),
           ),
         ],
       ),
@@ -110,9 +113,9 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
 
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('모든 즐겨찾기가 제거되었습니다'),
-              duration: Duration(seconds: 2),
+            SnackBar(
+              content: Text(TranslationService.translate('removed_from_favorites')),
+              duration: const Duration(seconds: 2),
             ),
           );
         }
@@ -125,9 +128,9 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
     return Scaffold(
       backgroundColor: Colors.grey[50],
       appBar: AppBar(
-        title: const Text(
-          '즐겨찾기',
-          style: TextStyle(
+        title: Text(
+          TranslationService.translate('favorites'),
+          style: const TextStyle(
             fontWeight: FontWeight.bold,
             color: Colors.white,
           ),
@@ -166,7 +169,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                       ),
                       const SizedBox(height: 16),
                       Text(
-                        '즐겨찾기된 명언이 없습니다',
+                        TranslationService.translate('no_favorites'),
                         style: TextStyle(
                           fontSize: 18,
                           color: Colors.grey[600],
@@ -174,7 +177,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                       ),
                       const SizedBox(height: 8),
                       Text(
-                        '하트 버튼을 눌러 명언을 즐겨찾기에 추가해보세요',
+                        TranslationService.translate('no_favorites'),
                         style: TextStyle(
                           fontSize: 14,
                           color: Colors.grey[500],

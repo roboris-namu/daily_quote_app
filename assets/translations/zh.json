@@ -1,0 +1,19 @@
+{
+  "app_title": "每日名言",
+  "refresh": "刷新",
+  "add_to_favorites": "添加到收藏",
+  "remove_from_favorites": "从收藏中移除",
+  "share": "分享",
+  "favorites": "收藏",
+  "home": "首页",
+  "language": "语言",
+  "quote_of_the_day": "今日名言",
+  "no_favorites": "暂无收藏的名言",
+  "added_to_favorites": "已添加到收藏",
+  "removed_from_favorites": "已从收藏中移除",
+  "share_quote": "分享名言",
+  "share_as_text": "以文本分享",
+  "share_as_image": "以图片分享",
+  "cancel": "取消",
+  "ok": "确定"
+}

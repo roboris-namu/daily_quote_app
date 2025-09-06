@@ -5,6 +5,7 @@ import '../models/language.dart';
 import '../services/quote_service.dart';
 import '../services/favorites_service.dart';
 import '../services/share_service.dart';
+import '../services/translation_service.dart';
 import '../widgets/quote_card.dart';
 import '../widgets/language_selector.dart';
 import 'favorites_screen.dart';
@@ -73,6 +74,8 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() {
       _currentLanguage = language;
     });
+    // 번역 서비스에 언어 변경 알림
+    TranslationService.setLanguage(language.code);
   }
 
   /// 즐겨찾기를 토글하는 메서드
@@ -92,7 +95,9 @@ class _HomeScreenState extends State<HomeScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(
-                _isFavorite ? '즐겨찾기에 추가되었습니다' : '즐겨찾기에서 제거되었습니다',
+                _isFavorite 
+                  ? TranslationService.translate('added_to_favorites')
+                  : TranslationService.translate('removed_from_favorites'),
               ),
               duration: const Duration(seconds: 2),
             ),
@@ -124,9 +129,9 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: Colors.grey[50],
       appBar: AppBar(
-        title: const Text(
-          'Daily Quotes',
-          style: TextStyle(
+        title: Text(
+          TranslationService.translate('app_title'),
+          style: const TextStyle(
             fontWeight: FontWeight.bold,
             color: Colors.white,
           ),
@@ -164,7 +169,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       const SizedBox(height: 16),
                       Text(
-                        '명언을 불러올 수 없습니다',
+                        TranslationService.translate('quote_of_the_day'),
                         style: TextStyle(
                           fontSize: 18,
                           color: Colors.grey[600],
@@ -173,7 +178,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       const SizedBox(height: 16),
                       ElevatedButton(
                         onPressed: _loadTodaysQuote,
-                        child: const Text('다시 시도'),
+                        child: Text(TranslationService.translate('refresh')),
                       ),
                     ],
                   ),
@@ -198,7 +203,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ElevatedButton.icon(
                           onPressed: _loadTodaysQuote,
                           icon: const Icon(Icons.refresh),
-                          label: const Text('새로고침'),
+                          label: Text(TranslationService.translate('refresh')),
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.deepPurple,
                             foregroundColor: Colors.white,

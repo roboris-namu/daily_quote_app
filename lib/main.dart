@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
+import 'services/translation_service.dart';
 
 /// Daily Quotes 앱의 메인 진입점
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await TranslationService.loadTranslations();
   runApp(const DailyQuotesApp());
 }
 
@@ -13,7 +16,7 @@ class DailyQuotesApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Daily Quotes',
+      title: TranslationService.translate('app_title'),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
