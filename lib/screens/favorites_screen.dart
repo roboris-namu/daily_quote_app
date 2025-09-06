@@ -71,7 +71,8 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(TranslationService.translate('removed_from_favorites')),
+            content:
+                Text(TranslationService.translate('removed_from_favorites')),
             duration: const Duration(seconds: 2),
           ),
         );
@@ -114,7 +115,8 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: Text(TranslationService.translate('removed_from_favorites')),
+              content:
+                  Text(TranslationService.translate('removed_from_favorites')),
               duration: const Duration(seconds: 2),
             ),
           );
