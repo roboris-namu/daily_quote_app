@@ -87,14 +87,16 @@ class _HomeScreenState extends State<HomeScreen> {
         HapticFeedback.lightImpact();
 
         // 스낵바 표시
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(
-              _isFavorite ? '즐겨찾기에 추가되었습니다' : '즐겨찾기에서 제거되었습니다',
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                _isFavorite ? '즐겨찾기에 추가되었습니다' : '즐겨찾기에서 제거되었습니다',
+              ),
+              duration: const Duration(seconds: 2),
             ),
-            duration: const Duration(seconds: 2),
-          ),
-        );
+          );
+        }
       }
     }
   }

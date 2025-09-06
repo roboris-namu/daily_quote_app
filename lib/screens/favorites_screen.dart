@@ -64,12 +64,14 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
       HapticFeedback.lightImpact();
 
       // 스낵바 표시
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('즐겨찾기에서 제거되었습니다'),
-          duration: Duration(seconds: 2),
-        ),
-      );
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('즐겨찾기에서 제거되었습니다'),
+            duration: Duration(seconds: 2),
+          ),
+        );
+      }
     }
   }
 
@@ -105,12 +107,14 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
           _favoriteQuotes.clear();
         });
 
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('모든 즐겨찾기가 제거되었습니다'),
-            duration: Duration(seconds: 2),
-          ),
-        );
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('모든 즐겨찾기가 제거되었습니다'),
+              duration: Duration(seconds: 2),
+            ),
+          );
+        }
       }
     }
   }
