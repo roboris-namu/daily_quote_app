@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import '../models/quote.dart';
 
@@ -22,7 +23,7 @@ class QuoteService {
 
       return _quotes!;
     } catch (e) {
-      print('명언 데이터 로드 중 오류 발생: $e');
+      debugPrint('명언 데이터 로드 중 오류 발생: $e');
       return [];
     }
   }

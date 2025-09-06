@@ -38,7 +38,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
         _isLoading = false;
       });
     } catch (e) {
-      print('즐겨찾기 명언 로드 중 오류 발생: $e');
+      debugPrint('즐겨찾기 명언 로드 중 오류 발생: $e');
       setState(() {
         _isLoading = false;
       });

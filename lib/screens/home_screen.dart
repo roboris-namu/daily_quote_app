@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
         });
       }
     } catch (e) {
-      print('명언 로드 중 오류 발생: $e');
+      debugPrint('명언 로드 중 오류 발생: $e');
       setState(() {
         _isLoading = false;
       });
