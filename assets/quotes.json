@@ -1,0 +1,190 @@
+{
+  "quotes": [
+    {
+      "id": 1,
+      "english": "The only way to do great work is to love what you do.",
+      "korean": "훌륭한 일을 하는 유일한 방법은 자신이 하는 일을 사랑하는 것이다.",
+      "author": "Steve Jobs"
+    },
+    {
+      "id": 2,
+      "english": "Life is what happens to you while you're busy making other plans.",
+      "korean": "인생은 당신이 다른 계획을 세우느라 바쁜 동안 일어나는 것이다.",
+      "author": "John Lennon"
+    },
+    {
+      "id": 3,
+      "english": "The future belongs to those who believe in the beauty of their dreams.",
+      "korean": "미래는 자신의 꿈의 아름다움을 믿는 사람들에게 속한다.",
+      "author": "Eleanor Roosevelt"
+    },
+    {
+      "id": 4,
+      "english": "It is during our darkest moments that we must focus to see the light.",
+      "korean": "가장 어두운 순간에 우리는 빛을 보기 위해 집중해야 한다.",
+      "author": "Aristotle"
+    },
+    {
+      "id": 5,
+      "english": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "korean": "성공은 최종이 아니고, 실패는 치명적이지 않다. 계속하는 용기가 중요하다.",
+      "author": "Winston Churchill"
+    },
+    {
+      "id": 6,
+      "english": "The way to get started is to quit talking and begin doing.",
+      "korean": "시작하는 방법은 말을 멈추고 행동을 시작하는 것이다.",
+      "author": "Walt Disney"
+    },
+    {
+      "id": 7,
+      "english": "Don't be afraid to give up the good to go for the great.",
+      "korean": "훌륭한 것을 위해 좋은 것을 포기하는 것을 두려워하지 마라.",
+      "author": "John D. Rockefeller"
+    },
+    {
+      "id": 8,
+      "english": "Innovation distinguishes between a leader and a follower.",
+      "korean": "혁신은 리더와 추종자를 구분한다.",
+      "author": "Steve Jobs"
+    },
+    {
+      "id": 9,
+      "english": "The only impossible journey is the one you never begin.",
+      "korean": "불가능한 여행은 당신이 절대 시작하지 않는 여행이다.",
+      "author": "Tony Robbins"
+    },
+    {
+      "id": 10,
+      "english": "Your time is limited, don't waste it living someone else's life.",
+      "korean": "당신의 시간은 제한되어 있다. 다른 사람의 인생을 살며 낭비하지 마라.",
+      "author": "Steve Jobs"
+    },
+    {
+      "id": 11,
+      "english": "If you really look closely, most overnight successes took a long time.",
+      "korean": "정말 자세히 보면, 대부분의 하룻밤 성공은 오랜 시간이 걸렸다.",
+      "author": "Steve Jobs"
+    },
+    {
+      "id": 12,
+      "english": "The way to get started is to quit talking and begin doing.",
+      "korean": "시작하는 방법은 말을 멈추고 행동을 시작하는 것이다.",
+      "author": "Walt Disney"
+    },
+    {
+      "id": 13,
+      "english": "Life is 10% what happens to you and 90% how you react to it.",
+      "korean": "인생은 당신에게 일어나는 일의 10%와 그에 대한 당신의 반응의 90%다.",
+      "author": "Charles R. Swindoll"
+    },
+    {
+      "id": 14,
+      "english": "The future belongs to those who believe in the beauty of their dreams.",
+      "korean": "미래는 자신의 꿈의 아름다움을 믿는 사람들에게 속한다.",
+      "author": "Eleanor Roosevelt"
+    },
+    {
+      "id": 15,
+      "english": "It is during our darkest moments that we must focus to see the light.",
+      "korean": "가장 어두운 순간에 우리는 빛을 보기 위해 집중해야 한다.",
+      "author": "Aristotle"
+    },
+    {
+      "id": 16,
+      "english": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "korean": "성공은 최종이 아니고, 실패는 치명적이지 않다. 계속하는 용기가 중요하다.",
+      "author": "Winston Churchill"
+    },
+    {
+      "id": 17,
+      "english": "The way to get started is to quit talking and begin doing.",
+      "korean": "시작하는 방법은 말을 멈추고 행동을 시작하는 것이다.",
+      "author": "Walt Disney"
+    },
+    {
+      "id": 18,
+      "english": "Don't be afraid to give up the good to go for the great.",
+      "korean": "훌륭한 것을 위해 좋은 것을 포기하는 것을 두려워하지 마라.",
+      "author": "John D. Rockefeller"
+    },
+    {
+      "id": 19,
+      "english": "Innovation distinguishes between a leader and a follower.",
+      "korean": "혁신은 리더와 추종자를 구분한다.",
+      "author": "Steve Jobs"
+    },
+    {
+      "id": 20,
+      "english": "The only impossible journey is the one you never begin.",
+      "korean": "불가능한 여행은 당신이 절대 시작하지 않는 여행이다.",
+      "author": "Tony Robbins"
+    },
+    {
+      "id": 21,
+      "english": "Your time is limited, don't waste it living someone else's life.",
+      "korean": "당신의 시간은 제한되어 있다. 다른 사람의 인생을 살며 낭비하지 마라.",
+      "author": "Steve Jobs"
+    },
+    {
+      "id": 22,
+      "english": "If you really look closely, most overnight successes took a long time.",
+      "korean": "정말 자세히 보면, 대부분의 하룻밤 성공은 오랜 시간이 걸렸다.",
+      "author": "Steve Jobs"
+    },
+    {
+      "id": 23,
+      "english": "The way to get started is to quit talking and begin doing.",
+      "korean": "시작하는 방법은 말을 멈추고 행동을 시작하는 것이다.",
+      "author": "Walt Disney"
+    },
+    {
+      "id": 24,
+      "english": "Life is 10% what happens to you and 90% how you react to it.",
+      "korean": "인생은 당신에게 일어나는 일의 10%와 그에 대한 당신의 반응의 90%다.",
+      "author": "Charles R. Swindoll"
+    },
+    {
+      "id": 25,
+      "english": "The future belongs to those who believe in the beauty of their dreams.",
+      "korean": "미래는 자신의 꿈의 아름다움을 믿는 사람들에게 속한다.",
+      "author": "Eleanor Roosevelt"
+    },
+    {
+      "id": 26,
+      "english": "It is during our darkest moments that we must focus to see the light.",
+      "korean": "가장 어두운 순간에 우리는 빛을 보기 위해 집중해야 한다.",
+      "author": "Aristotle"
+    },
+    {
+      "id": 27,
+      "english": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "korean": "성공은 최종이 아니고, 실패는 치명적이지 않다. 계속하는 용기가 중요하다.",
+      "author": "Winston Churchill"
+    },
+    {
+      "id": 28,
+      "english": "The way to get started is to quit talking and begin doing.",
+      "korean": "시작하는 방법은 말을 멈추고 행동을 시작하는 것이다.",
+      "author": "Walt Disney"
+    },
+    {
+      "id": 29,
+      "english": "Don't be afraid to give up the good to go for the great.",
+      "korean": "훌륭한 것을 위해 좋은 것을 포기하는 것을 두려워하지 마라.",
+      "author": "John D. Rockefeller"
+    },
+    {
+      "id": 30,
+      "english": "Innovation distinguishes between a leader and a follower.",
+      "korean": "혁신은 리더와 추종자를 구분한다.",
+      "author": "Steve Jobs"
+    },
+    {
+      "id": 31,
+      "english": "The only impossible journey is the one you never begin.",
+      "korean": "불가능한 여행은 당신이 절대 시작하지 않는 여행이다.",
+      "author": "Tony Robbins"
+    }
+  ]
+}
