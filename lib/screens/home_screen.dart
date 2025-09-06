@@ -37,7 +37,10 @@ class _HomeScreenState extends State<HomeScreen> {
     });
 
     try {
+      debugPrint('명언 로드 시작...');
       final quote = await QuoteService.getTodaysQuote();
+      debugPrint('명언 로드 완료: ${quote?.id}');
+
       if (quote != null) {
         setState(() {
           _todaysQuote = quote;
@@ -47,6 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
         // 즐겨찾기 상태 확인
         _checkFavoriteStatus();
       } else {
+        debugPrint('명언이 null입니다.');
         setState(() {
           _isLoading = false;
         });
@@ -95,9 +99,9 @@ class _HomeScreenState extends State<HomeScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(
-                _isFavorite 
-                  ? TranslationService.translate('added_to_favorites')
-                  : TranslationService.translate('removed_from_favorites'),
+                _isFavorite
+                    ? TranslationService.translate('added_to_favorites')
+                    : TranslationService.translate('removed_from_favorites'),
               ),
               duration: const Duration(seconds: 2),
             ),
@@ -119,7 +123,8 @@ class _HomeScreenState extends State<HomeScreen> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => const FavoritesScreen(),
+        builder: (context) =>
+            FavoritesScreen(initialLanguage: _currentLanguage),
       ),
     );
   }

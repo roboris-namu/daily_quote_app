@@ -10,7 +10,12 @@ import '../widgets/language_selector.dart';
 
 /// 즐겨찾기 화면
 class FavoritesScreen extends StatefulWidget {
-  const FavoritesScreen({super.key});
+  final Language initialLanguage;
+
+  const FavoritesScreen({
+    super.key,
+    required this.initialLanguage,
+  });
 
   @override
   State<FavoritesScreen> createState() => _FavoritesScreenState();
@@ -19,11 +24,12 @@ class FavoritesScreen extends StatefulWidget {
 class _FavoritesScreenState extends State<FavoritesScreen> {
   List<Quote> _favoriteQuotes = [];
   bool _isLoading = true;
-  Language _currentLanguage = Language.english; // 기본 언어는 영어
+  late Language _currentLanguage;
 
   @override
   void initState() {
     super.initState();
+    _currentLanguage = widget.initialLanguage;
     _loadFavoriteQuotes();
   }
 
@@ -176,15 +182,6 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                           fontSize: 18,
                           color: Colors.grey[600],
                         ),
-                      ),
-                      const SizedBox(height: 8),
-                      Text(
-                        TranslationService.translate('no_favorites'),
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.grey[500],
-                        ),
-                        textAlign: TextAlign.center,
                       ),
                     ],
                   ),

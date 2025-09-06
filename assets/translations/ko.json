@@ -9,6 +9,7 @@
   "language": "언어",
   "quote_of_the_day": "오늘의 명언",
   "no_favorites": "즐겨찾기한 명언이 없습니다",
+  "add_favorites_message": "하트 버튼을 눌러 명언을 즐겨찾기에 추가해보세요",
   "added_to_favorites": "즐겨찾기에 추가되었습니다",
   "removed_from_favorites": "즐겨찾기에서 제거되었습니다",
   "share_quote": "명언 공유",

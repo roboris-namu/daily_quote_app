@@ -43,6 +43,7 @@ class QuoteCard extends StatelessWidget {
         padding: const EdgeInsets.all(24),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
           children: [
             // 명언 텍스트
             Text(
@@ -54,6 +55,8 @@ class QuoteCard extends StatelessWidget {
                 height: 1.5,
               ),
               textAlign: TextAlign.center,
+              maxLines: 10, // 최대 10줄까지 표시
+              overflow: TextOverflow.ellipsis, // 넘치는 텍스트는 ...으로 표시
             ),
             const SizedBox(height: 20),
 
@@ -81,27 +84,48 @@ class QuoteCard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                // 즐겨찾기 버튼
-                _buildActionButton(
+                // 즐겨찾기 버튼 (아이콘만)
+                _buildIconOnlyButton(
                   icon: isFavorite ? Icons.favorite : Icons.favorite_border,
-                  label: isFavorite 
-                    ? TranslationService.translate('remove_from_favorites')
-                    : TranslationService.translate('add_to_favorites'),
                   color: isFavorite ? Colors.red : Colors.grey[600]!,
                   onPressed: onFavoriteToggle,
                 ),
 
-                // 공유 버튼
-                _buildActionButton(
-                  icon: Icons.share,
-                  label: TranslationService.translate('share'),
-                  color: Colors.deepPurple,
-                  onPressed: onShare,
+                const SizedBox(width: 16),
+
+                // 공유 버튼 (아이콘 + 텍스트)
+                Flexible(
+                  child: _buildActionButton(
+                    icon: Icons.share,
+                    label: TranslationService.translate('share'),
+                    color: Colors.deepPurple,
+                    onPressed: onShare,
+                  ),
                 ),
               ],
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  /// 아이콘만 있는 버튼을 생성하는 메서드
+  Widget _buildIconOnlyButton({
+    required IconData icon,
+    required Color color,
+    required VoidCallback onPressed,
+  }) {
+    return InkWell(
+      onTap: onPressed,
+      borderRadius: BorderRadius.circular(12),
+      child: Container(
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: color.withOpacity(0.3)),
+        ),
+        child: Icon(icon, color: color, size: 24),
       ),
     );
   }
@@ -127,12 +151,16 @@ class QuoteCard extends StatelessWidget {
           children: [
             Icon(icon, color: color, size: 20),
             const SizedBox(width: 8),
-            Text(
-              label,
-              style: TextStyle(
-                color: color,
-                fontWeight: FontWeight.w500,
-                fontSize: 14,
+            Flexible(
+              child: Text(
+                label,
+                style: TextStyle(
+                  color: color,
+                  fontWeight: FontWeight.w500,
+                  fontSize: 14,
+                ),
+                overflow: TextOverflow.ellipsis,
+                maxLines: 1,
               ),
             ),
           ],

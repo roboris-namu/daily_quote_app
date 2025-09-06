@@ -3,11 +3,11 @@ enum Language {
   english('en', 'English', 'EN'),
   korean('ko', '한국어', '한'),
   chinese('zh', '中文', '中'),
+  japanese('ja', '日本語', '日'),
   spanish('es', 'Español', 'ES'),
   portuguese('pt-BR', 'Português', 'PT'),
   hindi('hi', 'हिन्दी', 'हि'),
-  indonesian('id', 'Bahasa Indonesia', 'ID'),
-  japanese('ja', '日本語', '日');
+  indonesian('id', 'Bahasa Indonesia', 'ID');
 
   const Language(this.code, this.name, this.shortName);
 

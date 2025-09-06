@@ -9,6 +9,7 @@
   "language": "Language",
   "quote_of_the_day": "Quote of the Day",
   "no_favorites": "No favorite quotes yet",
+  "add_favorites_message": "Tap the heart button to add quotes to favorites",
   "added_to_favorites": "Added to favorites",
   "removed_from_favorites": "Removed from favorites",
   "share_quote": "Share Quote",

@@ -32,7 +32,8 @@ class LanguageSelector extends StatelessWidget {
         ),
       ),
       onSelected: onLanguageChanged,
-      itemBuilder: (BuildContext context) => Language.values.map((Language language) {
+      itemBuilder: (BuildContext context) =>
+          Language.values.map((Language language) {
         return PopupMenuItem<Language>(
           value: language,
           child: Row(
