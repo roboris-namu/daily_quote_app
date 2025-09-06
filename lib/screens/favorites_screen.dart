@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../models/quote.dart';
+import '../models/language.dart';
 import '../services/favorites_service.dart';
 import '../services/share_service.dart';
 import '../widgets/quote_card.dart';
@@ -17,7 +18,7 @@ class FavoritesScreen extends StatefulWidget {
 class _FavoritesScreenState extends State<FavoritesScreen> {
   List<Quote> _favoriteQuotes = [];
   bool _isLoading = true;
-  bool _isKorean = true; // 기본 언어는 한국어
+  Language _currentLanguage = Language.english; // 기본 언어는 영어
 
   @override
   void initState() {
@@ -46,9 +47,9 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
   }
 
   /// 언어를 변경하는 메서드
-  void _toggleLanguage() {
+  void _changeLanguage(Language language) {
     setState(() {
-      _isKorean = !_isKorean;
+      _currentLanguage = language;
     });
   }
 
@@ -77,7 +78,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
 
   /// 명언을 공유하는 메서드
   Future<void> _shareQuote(Quote quote) async {
-    await ShareService.shareQuote(quote, isKorean: _isKorean);
+    await ShareService.shareQuote(quote, language: _currentLanguage);
   }
 
   /// 모든 즐겨찾기를 제거하는 메서드
@@ -136,8 +137,8 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
         actions: [
           // 언어 변경 버튼
           LanguageSelector(
-            isKorean: _isKorean,
-            onLanguageChanged: _toggleLanguage,
+            currentLanguage: _currentLanguage,
+            onLanguageChanged: _changeLanguage,
           ),
           // 모든 즐겨찾기 제거 버튼
           if (_favoriteQuotes.isNotEmpty)
@@ -194,7 +195,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                         padding: const EdgeInsets.only(bottom: 16),
                         child: QuoteCard(
                           quote: quote,
-                          isKorean: _isKorean,
+                          currentLanguage: _currentLanguage,
                           isFavorite: true,
                           onFavoriteToggle: () => _removeFromFavorites(quote),
                           onShare: () => _shareQuote(quote),

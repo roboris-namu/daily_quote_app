@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../models/quote.dart';
+import '../models/language.dart';
 import '../services/quote_service.dart';
 import '../services/favorites_service.dart';
 import '../services/share_service.dart';
@@ -19,7 +20,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   Quote? _todaysQuote;
   bool _isLoading = true;
-  bool _isKorean = true; // 기본 언어는 한국어
+  Language _currentLanguage = Language.english; // 기본 언어는 영어
   bool _isFavorite = false;
 
   @override
@@ -68,9 +69,9 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   /// 언어를 변경하는 메서드
-  void _toggleLanguage() {
+  void _changeLanguage(Language language) {
     setState(() {
-      _isKorean = !_isKorean;
+      _currentLanguage = language;
     });
   }
 
@@ -104,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
   /// 명언을 공유하는 메서드
   Future<void> _shareQuote() async {
     if (_todaysQuote != null) {
-      await ShareService.shareQuote(_todaysQuote!, isKorean: _isKorean);
+      await ShareService.shareQuote(_todaysQuote!, language: _currentLanguage);
     }
   }
 
@@ -135,8 +136,8 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           // 언어 변경 버튼
           LanguageSelector(
-            isKorean: _isKorean,
-            onLanguageChanged: _toggleLanguage,
+            currentLanguage: _currentLanguage,
+            onLanguageChanged: _changeLanguage,
           ),
           // 즐겨찾기 화면으로 이동하는 버튼
           IconButton(
@@ -187,7 +188,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         // 오늘의 명언 카드
                         QuoteCard(
                           quote: _todaysQuote!,
-                          isKorean: _isKorean,
+                          currentLanguage: _currentLanguage,
                           isFavorite: _isFavorite,
                           onFavoriteToggle: _toggleFavorite,
                           onShare: _shareQuote,

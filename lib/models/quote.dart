@@ -3,12 +3,22 @@ class Quote {
   final int id;
   final String english;
   final String korean;
+  final String spanish;
+  final String portuguese;
+  final String hindi;
+  final String indonesian;
+  final String japanese;
   final String author;
 
   const Quote({
     required this.id,
     required this.english,
     required this.korean,
+    required this.spanish,
+    required this.portuguese,
+    required this.hindi,
+    required this.indonesian,
+    required this.japanese,
     required this.author,
   });
 
@@ -18,6 +28,11 @@ class Quote {
       id: json['id'] as int,
       english: json['english'] as String,
       korean: json['korean'] as String,
+      spanish: json['spanish'] as String,
+      portuguese: json['portuguese'] as String,
+      hindi: json['hindi'] as String,
+      indonesian: json['indonesian'] as String,
+      japanese: json['japanese'] as String,
       author: json['author'] as String,
     );
   }
@@ -28,13 +43,18 @@ class Quote {
       'id': id,
       'english': english,
       'korean': korean,
+      'spanish': spanish,
+      'portuguese': portuguese,
+      'hindi': hindi,
+      'indonesian': indonesian,
+      'japanese': japanese,
       'author': author,
     };
   }
 
   @override
   String toString() {
-    return 'Quote(id: $id, english: $english, korean: $korean, author: $author)';
+    return 'Quote(id: $id, english: $english, korean: $korean, spanish: $spanish, portuguese: $portuguese, hindi: $hindi, indonesian: $indonesian, japanese: $japanese, author: $author)';
   }
 
   @override
@@ -45,4 +65,26 @@ class Quote {
 
   @override
   int get hashCode => id.hashCode;
+
+  /// 특정 언어의 명언 텍스트를 가져오는 메서드
+  String getTextForLanguage(String languageCode) {
+    switch (languageCode) {
+      case 'en':
+        return english;
+      case 'ko':
+        return korean;
+      case 'es':
+        return spanish;
+      case 'pt-BR':
+        return portuguese;
+      case 'hi':
+        return hindi;
+      case 'id':
+        return indonesian;
+      case 'ja':
+        return japanese;
+      default:
+        return english; // 기본값은 영어
+    }
+  }
 }

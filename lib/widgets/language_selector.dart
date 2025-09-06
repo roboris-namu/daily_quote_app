@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
+import '../models/language.dart';
 
 /// 언어 선택 위젯
 class LanguageSelector extends StatelessWidget {
-  final bool isKorean;
-  final VoidCallback onLanguageChanged;
+  final Language currentLanguage;
+  final Function(Language) onLanguageChanged;
 
   const LanguageSelector({
     super.key,
-    required this.isKorean,
+    required this.currentLanguage,
     required this.onLanguageChanged,
   });
 
   @override
   Widget build(BuildContext context) {
-    return IconButton(
+    return PopupMenuButton<Language>(
       icon: Container(
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         decoration: BoxDecoration(
@@ -21,7 +22,7 @@ class LanguageSelector extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
         ),
         child: Text(
-          isKorean ? '한' : 'EN',
+          currentLanguage.shortName,
           style: const TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
@@ -29,8 +30,22 @@ class LanguageSelector extends StatelessWidget {
           ),
         ),
       ),
-      onPressed: onLanguageChanged,
-      tooltip: isKorean ? 'Switch to English' : '한국어로 전환',
+      onSelected: onLanguageChanged,
+      itemBuilder: (BuildContext context) => Language.values.map((Language language) {
+        return PopupMenuItem<Language>(
+          value: language,
+          child: Row(
+            children: [
+              Text(
+                language.shortName,
+                style: const TextStyle(fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(width: 8),
+              Text(language.name),
+            ],
+          ),
+        );
+      }).toList(),
     );
   }
 }

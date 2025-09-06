@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import '../models/quote.dart';
+import '../models/language.dart';
 
 /// 명언을 표시하는 카드 위젯
 class QuoteCard extends StatelessWidget {
   final Quote quote;
-  final bool isKorean;
+  final Language currentLanguage;
   final bool isFavorite;
   final VoidCallback onFavoriteToggle;
   final VoidCallback onShare;
@@ -12,7 +13,7 @@ class QuoteCard extends StatelessWidget {
   const QuoteCard({
     super.key,
     required this.quote,
-    required this.isKorean,
+    required this.currentLanguage,
     required this.isFavorite,
     required this.onFavoriteToggle,
     required this.onShare,
@@ -44,7 +45,7 @@ class QuoteCard extends StatelessWidget {
           children: [
             // 명언 텍스트
             Text(
-              isKorean ? quote.korean : quote.english,
+              quote.getTextForLanguage(currentLanguage.code),
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w500,
