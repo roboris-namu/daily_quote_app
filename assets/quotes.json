@@ -4,6 +4,7 @@
       "id": 1,
       "english": "The only way to do great work is to love what you do.",
       "korean": "훌륭한 일을 하는 유일한 방법은 자신이 하는 일을 사랑하는 것이다.",
+      "chinese": "做伟大工作的唯一方法就是热爱你所做的事情。",
       "spanish": "La única manera de hacer un gran trabajo es amar lo que haces.",
       "portuguese": "A única maneira de fazer um ótimo trabalho é amar o que você faz.",
       "hindi": "महान काम करने का एकमात्र तरीका यह है कि आप जो करते हैं उससे प्यार करें।",
@@ -15,6 +16,7 @@
       "id": 2,
       "english": "Life is what happens to you while you're busy making other plans.",
       "korean": "인생은 당신이 다른 계획을 세우느라 바쁜 동안 일어나는 것이다.",
+      "chinese": "生活就是当你忙于制定其他计划时发生在你身上的事情。",
       "spanish": "La vida es lo que te pasa mientras estás ocupado haciendo otros planes.",
       "portuguese": "A vida é o que acontece com você enquanto você está ocupado fazendo outros planos.",
       "hindi": "जीवन वह है जो आपके साथ तब होता है जब आप अन्य योजनाएं बनाने में व्यस्त होते हैं।",
@@ -31,7 +33,8 @@
       "portuguese": "The future belongs to those who believe in the beauty of their dreams.",
       "hindi": "The future belongs to those who believe in the beauty of their dreams.",
       "indonesian": "The future belongs to those who believe in the beauty of their dreams.",
-      "japanese": "The future belongs to those who believe in the beauty of their dreams."
+      "japanese": "The future belongs to those who believe in the beauty of their dreams.",
+      "chinese": "The future belongs to those who believe in the beauty of their dreams."
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
       "portuguese": "It is during our darkest moments that we must focus to see the light.",
       "hindi": "It is during our darkest moments that we must focus to see the light.",
       "indonesian": "It is during our darkest moments that we must focus to see the light.",
-      "japanese": "It is during our darkest moments that we must focus to see the light."
+      "japanese": "It is during our darkest moments that we must focus to see the light.",
+      "chinese": "It is during our darkest moments that we must focus to see the light."
     },
     {
       "id": 5,
@@ -53,7 +57,8 @@
       "portuguese": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
       "hindi": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
       "indonesian": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-      "japanese": "Success is not final, failure is not fatal: it is the courage to continue that counts."
+      "japanese": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "chinese": "Success is not final, failure is not fatal: it is the courage to continue that counts."
     },
     {
       "id": 6,
@@ -64,7 +69,8 @@
       "portuguese": "The way to get started is to quit talking and begin doing.",
       "hindi": "The way to get started is to quit talking and begin doing.",
       "indonesian": "The way to get started is to quit talking and begin doing.",
-      "japanese": "The way to get started is to quit talking and begin doing."
+      "japanese": "The way to get started is to quit talking and begin doing.",
+      "chinese": "The way to get started is to quit talking and begin doing."
     },
     {
       "id": 7,
@@ -75,7 +81,8 @@
       "portuguese": "Don't be afraid to give up the good to go for the great.",
       "hindi": "Don't be afraid to give up the good to go for the great.",
       "indonesian": "Don't be afraid to give up the good to go for the great.",
-      "japanese": "Don't be afraid to give up the good to go for the great."
+      "japanese": "Don't be afraid to give up the good to go for the great.",
+      "chinese": "Don't be afraid to give up the good to go for the great."
     },
     {
       "id": 8,
@@ -86,7 +93,8 @@
       "portuguese": "Innovation distinguishes between a leader and a follower.",
       "hindi": "Innovation distinguishes between a leader and a follower.",
       "indonesian": "Innovation distinguishes between a leader and a follower.",
-      "japanese": "Innovation distinguishes between a leader and a follower."
+      "japanese": "Innovation distinguishes between a leader and a follower.",
+      "chinese": "Innovation distinguishes between a leader and a follower."
     },
     {
       "id": 9,
@@ -97,7 +105,8 @@
       "portuguese": "The only impossible journey is the one you never begin.",
       "hindi": "The only impossible journey is the one you never begin.",
       "indonesian": "The only impossible journey is the one you never begin.",
-      "japanese": "The only impossible journey is the one you never begin."
+      "japanese": "The only impossible journey is the one you never begin.",
+      "chinese": "The only impossible journey is the one you never begin."
     },
     {
       "id": 10,
@@ -108,7 +117,8 @@
       "portuguese": "Your time is limited, don't waste it living someone else's life.",
       "hindi": "Your time is limited, don't waste it living someone else's life.",
       "indonesian": "Your time is limited, don't waste it living someone else's life.",
-      "japanese": "Your time is limited, don't waste it living someone else's life."
+      "japanese": "Your time is limited, don't waste it living someone else's life.",
+      "chinese": "Your time is limited, don't waste it living someone else's life."
     },
     {
       "id": 11,
@@ -119,7 +129,8 @@
       "portuguese": "If you really look closely, most overnight successes took a long time.",
       "hindi": "If you really look closely, most overnight successes took a long time.",
       "indonesian": "If you really look closely, most overnight successes took a long time.",
-      "japanese": "If you really look closely, most overnight successes took a long time."
+      "japanese": "If you really look closely, most overnight successes took a long time.",
+      "chinese": "If you really look closely, most overnight successes took a long time."
     },
     {
       "id": 12,
@@ -130,7 +141,8 @@
       "portuguese": "The way to get started is to quit talking and begin doing.",
       "hindi": "The way to get started is to quit talking and begin doing.",
       "indonesian": "The way to get started is to quit talking and begin doing.",
-      "japanese": "The way to get started is to quit talking and begin doing."
+      "japanese": "The way to get started is to quit talking and begin doing.",
+      "chinese": "The way to get started is to quit talking and begin doing."
     },
     {
       "id": 13,
@@ -141,7 +153,8 @@
       "portuguese": "Life is 10% what happens to you and 90% how you react to it.",
       "hindi": "Life is 10% what happens to you and 90% how you react to it.",
       "indonesian": "Life is 10% what happens to you and 90% how you react to it.",
-      "japanese": "Life is 10% what happens to you and 90% how you react to it."
+      "japanese": "Life is 10% what happens to you and 90% how you react to it.",
+      "chinese": "Life is 10% what happens to you and 90% how you react to it."
     },
     {
       "id": 14,
@@ -152,7 +165,8 @@
       "portuguese": "The future belongs to those who believe in the beauty of their dreams.",
       "hindi": "The future belongs to those who believe in the beauty of their dreams.",
       "indonesian": "The future belongs to those who believe in the beauty of their dreams.",
-      "japanese": "The future belongs to those who believe in the beauty of their dreams."
+      "japanese": "The future belongs to those who believe in the beauty of their dreams.",
+      "chinese": "The future belongs to those who believe in the beauty of their dreams."
     },
     {
       "id": 15,
@@ -163,7 +177,8 @@
       "portuguese": "It is during our darkest moments that we must focus to see the light.",
       "hindi": "It is during our darkest moments that we must focus to see the light.",
       "indonesian": "It is during our darkest moments that we must focus to see the light.",
-      "japanese": "It is during our darkest moments that we must focus to see the light."
+      "japanese": "It is during our darkest moments that we must focus to see the light.",
+      "chinese": "It is during our darkest moments that we must focus to see the light."
     },
     {
       "id": 16,
@@ -174,7 +189,8 @@
       "portuguese": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
       "hindi": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
       "indonesian": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-      "japanese": "Success is not final, failure is not fatal: it is the courage to continue that counts."
+      "japanese": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "chinese": "Success is not final, failure is not fatal: it is the courage to continue that counts."
     },
     {
       "id": 17,
@@ -185,7 +201,8 @@
       "portuguese": "The way to get started is to quit talking and begin doing.",
       "hindi": "The way to get started is to quit talking and begin doing.",
       "indonesian": "The way to get started is to quit talking and begin doing.",
-      "japanese": "The way to get started is to quit talking and begin doing."
+      "japanese": "The way to get started is to quit talking and begin doing.",
+      "chinese": "The way to get started is to quit talking and begin doing."
     },
     {
       "id": 18,
@@ -196,7 +213,8 @@
       "portuguese": "Don't be afraid to give up the good to go for the great.",
       "hindi": "Don't be afraid to give up the good to go for the great.",
       "indonesian": "Don't be afraid to give up the good to go for the great.",
-      "japanese": "Don't be afraid to give up the good to go for the great."
+      "japanese": "Don't be afraid to give up the good to go for the great.",
+      "chinese": "Don't be afraid to give up the good to go for the great."
     },
     {
       "id": 19,
@@ -207,7 +225,8 @@
       "portuguese": "Innovation distinguishes between a leader and a follower.",
       "hindi": "Innovation distinguishes between a leader and a follower.",
       "indonesian": "Innovation distinguishes between a leader and a follower.",
-      "japanese": "Innovation distinguishes between a leader and a follower."
+      "japanese": "Innovation distinguishes between a leader and a follower.",
+      "chinese": "Innovation distinguishes between a leader and a follower."
     },
     {
       "id": 20,
@@ -218,7 +237,8 @@
       "portuguese": "The only impossible journey is the one you never begin.",
       "hindi": "The only impossible journey is the one you never begin.",
       "indonesian": "The only impossible journey is the one you never begin.",
-      "japanese": "The only impossible journey is the one you never begin."
+      "japanese": "The only impossible journey is the one you never begin.",
+      "chinese": "The only impossible journey is the one you never begin."
     },
     {
       "id": 21,
@@ -229,7 +249,8 @@
       "portuguese": "Your time is limited, don't waste it living someone else's life.",
       "hindi": "Your time is limited, don't waste it living someone else's life.",
       "indonesian": "Your time is limited, don't waste it living someone else's life.",
-      "japanese": "Your time is limited, don't waste it living someone else's life."
+      "japanese": "Your time is limited, don't waste it living someone else's life.",
+      "chinese": "Your time is limited, don't waste it living someone else's life."
     },
     {
       "id": 22,
@@ -240,7 +261,8 @@
       "portuguese": "If you really look closely, most overnight successes took a long time.",
       "hindi": "If you really look closely, most overnight successes took a long time.",
       "indonesian": "If you really look closely, most overnight successes took a long time.",
-      "japanese": "If you really look closely, most overnight successes took a long time."
+      "japanese": "If you really look closely, most overnight successes took a long time.",
+      "chinese": "If you really look closely, most overnight successes took a long time."
     },
     {
       "id": 23,
@@ -251,7 +273,8 @@
       "portuguese": "The way to get started is to quit talking and begin doing.",
       "hindi": "The way to get started is to quit talking and begin doing.",
       "indonesian": "The way to get started is to quit talking and begin doing.",
-      "japanese": "The way to get started is to quit talking and begin doing."
+      "japanese": "The way to get started is to quit talking and begin doing.",
+      "chinese": "The way to get started is to quit talking and begin doing."
     },
     {
       "id": 24,
@@ -262,7 +285,8 @@
       "portuguese": "Life is 10% what happens to you and 90% how you react to it.",
       "hindi": "Life is 10% what happens to you and 90% how you react to it.",
       "indonesian": "Life is 10% what happens to you and 90% how you react to it.",
-      "japanese": "Life is 10% what happens to you and 90% how you react to it."
+      "japanese": "Life is 10% what happens to you and 90% how you react to it.",
+      "chinese": "Life is 10% what happens to you and 90% how you react to it."
     },
     {
       "id": 25,
@@ -273,7 +297,8 @@
       "portuguese": "The future belongs to those who believe in the beauty of their dreams.",
       "hindi": "The future belongs to those who believe in the beauty of their dreams.",
       "indonesian": "The future belongs to those who believe in the beauty of their dreams.",
-      "japanese": "The future belongs to those who believe in the beauty of their dreams."
+      "japanese": "The future belongs to those who believe in the beauty of their dreams.",
+      "chinese": "The future belongs to those who believe in the beauty of their dreams."
     },
     {
       "id": 26,
@@ -284,7 +309,8 @@
       "portuguese": "It is during our darkest moments that we must focus to see the light.",
       "hindi": "It is during our darkest moments that we must focus to see the light.",
       "indonesian": "It is during our darkest moments that we must focus to see the light.",
-      "japanese": "It is during our darkest moments that we must focus to see the light."
+      "japanese": "It is during our darkest moments that we must focus to see the light.",
+      "chinese": "It is during our darkest moments that we must focus to see the light."
     },
     {
       "id": 27,
@@ -295,7 +321,8 @@
       "portuguese": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
       "hindi": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
       "indonesian": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-      "japanese": "Success is not final, failure is not fatal: it is the courage to continue that counts."
+      "japanese": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "chinese": "Success is not final, failure is not fatal: it is the courage to continue that counts."
     },
     {
       "id": 28,
@@ -306,7 +333,8 @@
       "portuguese": "The way to get started is to quit talking and begin doing.",
       "hindi": "The way to get started is to quit talking and begin doing.",
       "indonesian": "The way to get started is to quit talking and begin doing.",
-      "japanese": "The way to get started is to quit talking and begin doing."
+      "japanese": "The way to get started is to quit talking and begin doing.",
+      "chinese": "The way to get started is to quit talking and begin doing."
     },
     {
       "id": 29,
@@ -317,7 +345,8 @@
       "portuguese": "Don't be afraid to give up the good to go for the great.",
       "hindi": "Don't be afraid to give up the good to go for the great.",
       "indonesian": "Don't be afraid to give up the good to go for the great.",
-      "japanese": "Don't be afraid to give up the good to go for the great."
+      "japanese": "Don't be afraid to give up the good to go for the great.",
+      "chinese": "Don't be afraid to give up the good to go for the great."
     },
     {
       "id": 30,
@@ -328,7 +357,8 @@
       "portuguese": "Innovation distinguishes between a leader and a follower.",
       "hindi": "Innovation distinguishes between a leader and a follower.",
       "indonesian": "Innovation distinguishes between a leader and a follower.",
-      "japanese": "Innovation distinguishes between a leader and a follower."
+      "japanese": "Innovation distinguishes between a leader and a follower.",
+      "chinese": "Innovation distinguishes between a leader and a follower."
     },
     {
       "id": 31,
@@ -339,7 +369,8 @@
       "portuguese": "The only impossible journey is the one you never begin.",
       "hindi": "The only impossible journey is the one you never begin.",
       "indonesian": "The only impossible journey is the one you never begin.",
-      "japanese": "The only impossible journey is the one you never begin."
+      "japanese": "The only impossible journey is the one you never begin.",
+      "chinese": "The only impossible journey is the one you never begin."
     }
   ]
 }

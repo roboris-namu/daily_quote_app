@@ -3,6 +3,7 @@ class Quote {
   final int id;
   final String english;
   final String korean;
+  final String chinese;
   final String spanish;
   final String portuguese;
   final String hindi;
@@ -14,6 +15,7 @@ class Quote {
     required this.id,
     required this.english,
     required this.korean,
+    required this.chinese,
     required this.spanish,
     required this.portuguese,
     required this.hindi,
@@ -28,6 +30,7 @@ class Quote {
       id: json['id'] as int,
       english: json['english'] as String,
       korean: json['korean'] as String,
+      chinese: json['chinese'] as String,
       spanish: json['spanish'] as String,
       portuguese: json['portuguese'] as String,
       hindi: json['hindi'] as String,
@@ -43,6 +46,7 @@ class Quote {
       'id': id,
       'english': english,
       'korean': korean,
+      'chinese': chinese,
       'spanish': spanish,
       'portuguese': portuguese,
       'hindi': hindi,
@@ -54,7 +58,7 @@ class Quote {
 
   @override
   String toString() {
-    return 'Quote(id: $id, english: $english, korean: $korean, spanish: $spanish, portuguese: $portuguese, hindi: $hindi, indonesian: $indonesian, japanese: $japanese, author: $author)';
+    return 'Quote(id: $id, english: $english, korean: $korean, chinese: $chinese, spanish: $spanish, portuguese: $portuguese, hindi: $hindi, indonesian: $indonesian, japanese: $japanese, author: $author)';
   }
 
   @override
@@ -73,6 +77,8 @@ class Quote {
         return english;
       case 'ko':
         return korean;
+      case 'zh':
+        return chinese;
       case 'es':
         return spanish;
       case 'pt-BR':

@@ -2,6 +2,7 @@
 enum Language {
   english('en', 'English', 'EN'),
   korean('ko', '한국어', '한'),
+  chinese('zh', '中文', '中'),
   spanish('es', 'Español', 'ES'),
   portuguese('pt-BR', 'Português', 'PT'),
   hindi('hi', 'हिन्दी', 'हि'),
@@ -29,6 +30,8 @@ enum Language {
         return quoteData['english'] as String;
       case Language.korean:
         return quoteData['korean'] as String;
+      case Language.chinese:
+        return quoteData['chinese'] as String;
       case Language.spanish:
         return quoteData['spanish'] as String;
       case Language.portuguese:
